@@ -1,0 +1,22 @@
+mongo
+> show dbs
+> show collections
+> 
+
+# See ArticleNameRepositoryIntegrationTest.java
+
+## Insert a row
+> db.ArticleName.insert({"activeFlg":true,"artId":1,"description":"Spring t-shirt description","id":"1","langId":1,"linkFriendlyName":"\/articles\/spring-t-shirt","name":"Spring t-shirt"})
+
+## Find by id
+> db.ArticleName.findOne({ "id" : "1"})
+
+# Find all
+> db.ArticleName.find().pretty()
+
+# Delete one
+> db.ArticleName.deleteOne({"_id":2})
+
+> cls
+> exit
+

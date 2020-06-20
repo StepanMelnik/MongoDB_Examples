@@ -1,0 +1,34 @@
+mongo
+> help
+> db.help()
+> db.severStatus()
+
+> show dbs
+> show collections
+
+# Create "SpringTest" db and add users
+> use SpringTest	<-- creates "test" db
+> db		<-- show current db
+> db.createUser(
+  {
+    user: "tester",
+    pwd: "s3cr3t",
+    roles: [
+       { role: "readWrite", db: "SpringTest" }
+    ]
+  }
+)
+> show users
+
+# Create collection
+>  db.createCollection('user')
+> show collections
+
+# Drop db
+> use Article
+> db
+> db.dropDatabase()
+
+> cls
+> exit
+

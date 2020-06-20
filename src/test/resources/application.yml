@@ -1,0 +1,13 @@
+spring:
+  data:
+    # see MongoClientFactorySupport, MongoClientSettings
+    mongodb:
+      # Random port for embedded MongoDB
+      # port: 0
+      host: repository.sme.com
+      port: 27017
+      username: tester
+      password: s3cr3t
+      database: SpringTest
+      #uri: mongodb://tester:s3cr3t@repository.sme.com:27017
+      
